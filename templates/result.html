@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR Result</title>
+    <style>
+        /* Center-align all headings */
+        h1, h2 {
+            text-align: center;
+        }
+
+        /* Set max width for the image */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>OCR Result</h1>
+    <div>
+        <h2>Uploaded Image with Bounding Boxes</h2>
+        <img src="data:image/png;base64,{{ image_with_boxes }}" alt="Uploaded Image with Bounding Boxes">
+    </div>
+    <div>
+        <h2>OCR Text</h2>
+        <pre>{{ ocr_text }}</pre>
+    </div>
+</body>
+</html>
